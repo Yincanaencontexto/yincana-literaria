@@ -434,7 +434,7 @@
         <!-- CABECERA ATRACTIVA -->
         <div class="form-header">
             <h1 class="form-title">📖 Yincana Literaria</h1>
-            <p class="form-description">Una aventura interactiva a través del libro</p>
+            <p class="form-description">Del libro: "Caminar para aprender</p>
         </div>
 
         <!-- PANTALLA DE INICIO -->
@@ -443,11 +443,11 @@
                 <div class="start-icon">📚</div>
                 <h2 class="section-title">¡Comienza tu aventura!</h2>
                 <p class="section-description">
-                    Para iniciar la yincana, escanea el código QR que encontrarás en el prólogo del libro.
+                    Para iniciar la yincana, escanea el código QR que encontrarás escondido en la página 0,000 N 0,001 W del libro.
                 </p>
                 
                 <div class="book-reference">
-                    <strong>📍 Ubicación:</strong> Primera página del libro, esquina inferior derecha
+                    <strong>📍 Ubicación:</strong> Página de la presentación de libro, escondido en algún lugar
                 </div>
                 
                 <button class="start-button" onclick="initQRScanner()">
@@ -476,7 +476,7 @@
             </p>
             
             <div class="book-reference">
-                <strong>📍 Ubicación:</strong> <span id="codeLocation">Primera página del libro, esquina inferior derecha</span>
+                <strong>📍 Ubicación:</strong> <span id="codeLocation">Página del índice del libro, en una esquina</span>
             </div>
             
             <input type="text" id="codeInput" placeholder="Escribe la clave aquí">
@@ -614,9 +614,9 @@
         // CONFIGURACIÓN COMPLETA (6 NIVELES)
         const gameConfig = {
             1: {
-                qrLocation: "Primera página del libro, esquina inferior derecha",
-                keyLocation: "Primera página del libro, junto al título",
-                accessCode: "tinta azul",
+                qrLocation: "Página de la presentación del libro, escondida en algún lugar",
+                keyLocation: "Página del índice del libro, en una esquina",
+                accessCode: "Coordenadas",
                 question: "¿Qué personaje aparece en la ilustración de la página 15?",
                 options: [
                     { text: "El mago Altharion", value: "mago" },
